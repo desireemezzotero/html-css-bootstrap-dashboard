@@ -13,11 +13,485 @@
  <!-- css -->
   <link rel="stylesheet" href="css/style.css">
 
+   <!-- fontaweresome -->
+   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.css' integrity='sha512-8BU3emz11z9iF75b10oPjjpamM4Mz23yQFQymbtwyPN3mNWHxpgeqyrYnkIUP6A8KyAj5k2p3MiYLtYqew7gIw==' crossorigin='anonymous'/>
+
 </head>
 
-
-
 <body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark py-3">
+      <div class="container-fluid">
+
+      <img class="dm-duck" src="./img/duck.png" alt="duck">
+        
+        <button class="navbar-toggler bg-dark border-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+          <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="#">Catalogo libri</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="#">Anagrafica Utenti</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="#">Storico Prestiti</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="#">Help</a>
+            </li>
+            
+          </ul>
+      
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+
+
+
+  <main>
+    <section class="container my-5 position-relative p-0">
+      <h1 class="d-inline">Catalogo Libri</h1>
+      
+
+      <button class="btn btn-primary position-absolute top-0 end-0">
+        Aggiungi libro
+      </button>
+
+
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col" colspan="4">Titolo</th>
+            <th scope="col" class="d-none d-md-table-cell">Data prestito</th>
+            <th scope="col">Stato</th>
+            <th scope="col">Azioni</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <!-- first -->
+          <tr>
+            <td colspan="4">
+              I pilastri della terra
+            </td>
+
+            <td class="d-none d-md-table-cell"> 
+              -
+            </td>
+
+            <td>
+              <span class="badge text-bg-success">Disponibile</span>
+            </td>
+
+            <td>
+             <div>
+              <button type="button" class="btn btn-light btn-outline-secondary"> 
+                <i class="fa-solid fa-pen text-secondary"></i>
+              </button>
+
+              <button type="button" class="btn btn-light btn-outline-secondary">
+                <i class="fa-solid fa-trash text-secondary"></i>
+              </button>
+             </div>
+            </td>
+          </tr>
+          <!-- end first -->
+
+          <!-- second -->
+           <tr>
+            <td colspan="4">
+             I promessi sposi
+            </td>
+
+            <td class="d-none d-md-table-cell">
+              -
+            </td>
+
+            <td>
+              <span class="badge text-bg-success">Disponibile</span>
+            </td>
+
+            <td>
+             <div>
+              <button type="button" class="btn btn-light btn-outline-secondary"> 
+                <i class="fa-solid fa-pen text-secondary"></i>
+              </button>
+
+              <button type="button" class="btn btn-light btn-outline-secondary">
+                <i class="fa-solid fa-trash text-secondary"></i>
+              </button>
+             </div>
+            </td>
+          </tr>
+          <!-- end second-->
+
+
+           <!-- third -->
+           <tr>
+            <td colspan="4">
+             Il signore degli anelli
+            </td>
+
+            <td class="d-none d-md-table-cell">
+              18/10/2023
+            </td>
+
+            <td>
+              <span class="badge text-bg-warning text-light">In prestito</span>
+            </td>
+
+            <td>
+             <div>
+              <button type="button" class="btn btn-light btn-outline-secondary"> 
+                <i class="fa-solid fa-pen text-secondary"></i>
+              </button>
+
+              <button type="button" class="btn btn-light btn-outline-secondary">
+                <i class="fa-solid fa-trash text-secondary"></i>
+              </button>
+             </div>
+            </td>
+           </tr>
+          <!-- end third -->
+
+
+          <!-- fourth -->
+          <tr>
+            <td colspan="4">
+              Harry Potter e la pietra filosofale
+            </td>
+
+            <td class="d-none d-md-table-cell">
+              -
+            </td>
+
+            <td>
+              <span class="badge text-bg-success">Disponibile</span>
+            </td>
+
+            <td>
+             <div>
+              <button type="button" class="btn btn-light btn-outline-secondary"> 
+                <i class="fa-solid fa-pen text-secondary"></i>
+              </button>
+
+              <button type="button" class="btn btn-light btn-outline-secondary">
+                <i class="fa-solid fa-trash text-secondary"></i>
+              </button>
+             </div>
+            </td>
+           </tr>
+          <!-- end fourth -->
+
+
+          <!-- fifth -->
+           <tr>
+            <td colspan="4">
+             Il codice Da Vinci
+            </td>
+
+            <td class="d-none d-md-table-cell">
+              -
+            </td>
+
+            <td>
+              <span class="badge text-bg-danger">Non disponibile</span>
+            </td>
+
+            <td>
+             <div>
+              <button type="button" class="btn btn-light btn-outline-secondary"> 
+                <i class="fa-solid fa-pen text-secondary"></i>
+              </button>
+
+              <button type="button" class="btn btn-light btn-outline-secondary">
+                <i class="fa-solid fa-trash text-secondary"></i>
+              </button>
+             </div>
+            </td>
+           </tr>
+          <!-- end fifth -->
+
+
+          <!-- sixth -->
+          <tr>
+            <td colspan="4">
+             Shining
+            </td>
+
+            <td class="d-none d-md-table-cell">
+              -
+            </td>
+
+            <td>
+              <span class="badge text-bg-success">Disponibile</span>
+            </td>
+
+            <td>
+             <div>
+              <button type="button" class="btn btn-light btn-outline-secondary"> 
+                <i class="fa-solid fa-pen text-secondary"></i>
+              </button>
+
+              <button type="button" class="btn btn-light btn-outline-secondary">
+                <i class="fa-solid fa-trash text-secondary"></i>
+              </button>
+             </div>
+            </td>
+           </tr>
+          <!-- end sixth -->
+
+
+          <!-- seventh -->
+          <tr>
+            <td colspan="4">
+              La Divina Commedia
+            </td>
+
+            <td class="d-none d-md-table-cell">
+              21/09/2023
+            </td>
+
+            <td>
+              <span class="badge text-bg-warning text-light">In prestito</span>
+            </td>
+
+            <td>
+             <div>
+              <button type="button" class="btn btn-light btn-outline-secondary"> 
+                <i class="fa-solid fa-pen text-secondary"></i>
+              </button>
+
+              <button type="button" class="btn btn-light btn-outline-secondary">
+                <i class="fa-solid fa-trash text-secondary"></i>
+              </button>
+             </div>
+            </td>
+           </tr>
+          <!-- end seventh -->
+
+          <!-- eighth -->
+          <tr>
+            <td colspan="4">
+              Trono di spade
+            </td>
+
+            <td class="d-none d-md-table-cell">
+              -
+            </td>
+
+            <td>
+              <span class="badge text-bg-success"> Disponibile</span>
+            </td>
+
+            <td>
+             <div>
+              <button type="button" class="btn btn-light btn-outline-secondary"> 
+                <i class="fa-solid fa-pen text-secondary"></i>
+              </button>
+
+              <button type="button" class="btn btn-light btn-outline-secondary">
+                <i class="fa-solid fa-trash text-secondary"></i>
+              </button>
+             </div>
+            </td>
+           </tr>
+          <!-- end eighth -->
+
+          <!-- ninth -->
+          <tr>
+            <td colspan="4">
+              Il mondo di Sofia
+            </td>
+
+            <td class="d-none d-md-table-cell">
+              -
+            </td>
+
+            <td>
+              <span class="badge text-bg-danger">Non disponibile</span>
+            </td>
+
+            <td>
+             <div>
+              <button type="button" class="btn btn-light btn-outline-secondary"> 
+                <i class="fa-solid fa-pen text-secondary"></i>
+              </button>
+
+              <button type="button" class="btn btn-light btn-outline-secondary">
+                <i class="fa-solid fa-trash text-secondary"></i>
+              </button>
+             </div>
+            </td>
+           </tr>
+          <!-- end ninth -->
+
+          <!-- tenth -->
+          <tr>
+            <td colspan="4">
+              Le cronache di Narnia: il Leone, la strega e l'armadio
+            </td>
+
+            <td class="d-none d-md-table-cell">
+              25/07/2023
+            </td>
+
+            <td>
+              <span class="badge text-bg-warning text-light">In prestito</span>
+            </td>
+
+            <td>
+             <div>
+              <button type="button" class="btn btn-light btn-outline-secondary"> 
+                <i class="fa-solid fa-pen text-secondary"></i>
+              </button>
+
+              <button type="button" class="btn btn-light btn-outline-secondary">
+                <i class="fa-solid fa-trash text-secondary"></i>
+              </button>
+             </div>
+            </td>
+           </tr>
+          <!-- end tenth -->
+
+
+          <!-- eleventh -->
+           <tr>
+            <td colspan="4">
+              Il piccolo principe
+            </td>
+
+            <td class="d-none d-md-table-cell">
+              -
+            </td>
+
+            <td>
+              <span class="badge text-bg-success">Disponibile</span>
+            </td>
+
+            <td>
+             <div>
+              <button type="button" class="btn btn-light btn-outline-secondary"> 
+                <i class="fa-solid fa-pen text-secondary"></i>
+              </button>
+
+              <button type="button" class="btn btn-light btn-outline-secondary">
+                <i class="fa-solid fa-trash text-secondary"></i>
+              </button>
+             </div>
+            </td>
+           </tr>
+          <!-- end eleventh -->
+
+          <!-- twelfth -->
+           <tr>
+            <td colspan="4">
+              La storia infinita
+            </td>
+
+            <td class="d-none d-md-table-cell">
+              -
+            </td>
+
+            <td>
+              <span class="badge text-bg-success">Disponibile</span>
+            </td>
+
+            <td>
+             <div>
+              <button type="button" class="btn btn-light btn-outline-secondary"> 
+                <i class="fa-solid fa-pen text-secondary"></i>
+              </button>
+
+              <button type="button" class="btn btn-light btn-outline-secondary">
+                <i class="fa-solid fa-trash text-secondary"></i>
+              </button>
+             </div>
+            </td>
+           </tr>
+          <!-- end twelfth -->
+      
+         
+
+
+
+
+
+         
+
+
+
+
+
+         
+          
+
+
+
+
+
+
+
+
+
+
+
+
+        </tbody>
+      </table>
+
+
+
+
+
+
+
+
+
+
+      
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </main>
   
 </body>
+
+
 </html>
