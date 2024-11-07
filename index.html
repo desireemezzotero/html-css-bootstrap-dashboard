@@ -75,14 +75,16 @@
 
         <!-- col -->
 
-        <div class="w-75 position-relative">
-          <h1 class="d-inline">Catalogo Libri</h1>
-      
+        <div class="col-12 col-lg-9">
 
-          <button class="btn btn-primary position-absolute top-0 end-0">
-            Aggiungi libro
-          </button>
-    
+         <div class="d-flex justify-content-between">
+           <h1 >Catalogo Libri</h1>
+           
+            <button class="btn btn-sm btn-primary ">
+              Aggiungi libro
+            </button>
+         </div>
+          
     
           <table class="table table-striped">
             <thead>
@@ -444,46 +446,48 @@
 
 
         <!-- col2 -->
-         <div class="col border border-1 mx-3 form-control p-0 mb-2">
 
-          <div class="border border-1 form-control bg-body-tertiary h-auto p-3 rounded-bottom-0" >
-            <h3>Todo</h3>
+        <div class="col-12 col-lg-3 debug p-1">
+          <div class="card">
+            <div class="card-header fs-3 bg-body-tertiary">
+                Todo
+            </div>
+
+              <ul class="list-group list-group-flush border border-1 mx-3 my-3 rounded">
+
+                <li class="list-group-item">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                     Chiamare segreteria
+                    </label>
+                  </div>
+                </li>
+  
+                <li class="list-group-item">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Mandare avvisi prestiti scaduti
+                    </label>
+                  </div>
+                </li>
+  
+  
+                <li class="list-group-item">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Ordinare nuovi libri
+                    </label>
+                  </div>
+                </li>
+              </ul>
+  
           </div>
-  
-          <div class="border border-1 form-control h-auto ms-2 me-2 w-auto mt-3">
-  
-            <div class="form-check border-1 border-bottom">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label fs-6" for="flexCheckDefault">
-                Chiamare segreteria
-              </label>
-            </div>
-  
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-              <label class="form-check-label fs-6" for="flexCheckChecked">
-                Mandare avvisi prestiti scaduti
-              </label>
-            </div>
-  
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-              <label class="form-check-label fs-6" for="flexCheckChecked">
-                Oridinare nuovi libri
-              </label>
-            </div>
-  
-  
-  
-          </div>
-  
-  
-  
-  
-  
-  
-  
         </div>
+
+        <!-- end col2  -->
 
 
 

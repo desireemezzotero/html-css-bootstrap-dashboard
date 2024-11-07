@@ -1,3 +1,8 @@
 .dm-duck{
   width: 60px;
 } 
+
+.debug {
+  background-color: aqua;
+  border:1px solid black 
+}
