@@ -78,15 +78,93 @@
         <div class="col-12 col-lg-9">
 
          <div class="d-flex justify-content-between">
-           <h1 >Catalogo Libri</h1>
+            <h1 >Catalogo Libri</h1>
+
+            <!-- offcanvas -->
+            <div class="d-flex align-items-center h-100">
+              <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"  aria-controls="offcanvasExample">
+               Aggiungi Libro
+              </button>
+            </div>
            
-           <div class="d-flex align-items-center h-100">
-            <button class="btn btn-primary">
-              Aggiungi libro
-            </button>
-           </div>
-           
-         </div>
+          
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+
+              <div class="offcanvas-header">
+                <h1>Nuovo Libro</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+
+             <div class="offcanvas-body">
+                <form class="my-5">
+                   <div class="row">
+        
+                      <div class="col-6">
+                       <label class="form-label fs-4">Nome Autore</label>
+                       <input type="text" class="form-control fs-5" placeholder="Inserisci il nome dell'autore">
+                      </div><!-- div col-6 -->
+        
+                      <div class="col-6">
+                        <label class="form-label fs-4">Cognome Autore</label>
+                        <input type="text" class="form-control fs-5" placeholder="Inserisci il cognome dell'autore">
+                      </div><!-- col-6 -->
+        
+                      <div class="col-12 my-3">
+                        <label class="form-label fs-4">Titolo</label>
+                        <input type="text" class="form-control fs-5" placeholder="Inserisci il titolo del libro">
+                        <div class="form-text text-secondary fs-6">
+                           Titolo versione italiana
+                         </div>
+                      </div><!-- col-12 -->
+        
+        
+                      <div class="col-12 col-lg-6 my-3">
+                        <label class="form-label fs-4">Genere</label>
+                        <select class="form-select fs-5">
+                           <option class="fs-5" selected>Scegli il genere</option>
+                           <option class="fs-5" value="1">Uomo</option>
+                           <option class="fs-5" value="2">Donna</option>
+                           <option class="fs-5" value="3">Preferisco non dichiarare</option>
+                        </select>
+                      </div><!-- col-12 col-lg-4 -->
+        
+                      <div class="col-12 col-lg-6 my-3">
+                        <label class="form-label fs-4">Anno di pubblicazione</label>
+                        <input type="text" class="form-control fs-5" placeholder="Inserisci l'anno">
+                      </div><!-- col-12 col-lg-4-->
+        
+                      <div class="col-12 my-3 mb-5">
+                        <label class="form-label fs-4">ISBN#</label>
+                        <input type="text" class="form-control fs-5" placeholder="Inserisci il codice ISBN#">
+                      </div><!-- col-12 col-lg-4 -->
+        
+                   <hr>
+        
+                      <div class="col-12 my-3">
+                        <label class="form-label fs-4">Note</label>
+                        <textarea class="form-control fs-5 h-100" placeholder="Inserisci eventuali note sul libro"></textarea>
+                     </div>
+                  </div><!-- row -->
+                </form>
+        
+        
+        
+                <div class="form-check fs-5">
+                  <input class="form-check-input" type="checkbox">
+                  <label class="form-check-label fs-5">
+                    Disponibile anche in versione digitale
+                  </label>
+                </div> <!-- form-check -->
+        
+                <div class="my-4">
+                  <button class="btn btn-primary btn-lg" type="button">
+                   Aggiungi libro
+                  </button>
+                </div> <!-- botton -->
+              
+              </div> <!-- div offcanvas body -->
+           </div> <!-- div offcanvas -->
+         </div><!-- div flex -->
           
     
           <table class="table table-striped">
